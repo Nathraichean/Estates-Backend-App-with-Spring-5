@@ -1,0 +1,700 @@
+{
+	"info": {
+		"_postman_id": "faa9cb35-13e0-4b45-ae23-027fc71b00b4",
+		"name": "Estates",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2612694"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Create a User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"firstName\": \"Tom\",\r\n        \"avatarUrl\": \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVLqfekg_kitC_QJ5kgBUTh2tt5EIcxEnQDQ&usqp=CAU\",\r\n        \"lastName\": \"Huck\",\r\n        \"username\": \"thuckkk\",\r\n        \"password\": \"JohnDoe123!\",\r\n        \"userRole\": \"STANDARD\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/user/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a User",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/users/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create a User Copy",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\":18,\r\n        \"firstName\": \"Tom\",\r\n        \"lastName\": \"Huck\",\r\n        \"email\": \"thuckkk@abv.bg\",\r\n        \"username\": \"thuckkk\",\r\n        \"password\": \"JohnDoe123!\",\r\n        \"userRole\": \"STANDARD\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/user/18",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user",
+								"18"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Users",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/user/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Agency",
+			"item": [
+				{
+					"name": "GET Agency",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "file",
+							"file": {}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/agency",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"agency"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete an Agency",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "file",
+							"file": {}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/agency",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"agency"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Agency",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "file",
+							"file": {}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/agency",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"agency"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create an Agency",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"name\": \"Nova agenciya\",\r\n        \"description\": \"Test prez postman\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/agency",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"agency"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Estate",
+			"item": [
+				{
+					"name": "Update an Estate",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 20,\r\n    \"description\": \"This is a house estate in sofia lozenets.\",\r\n    \"location\": \"SOFIA_LOZENETS\",\r\n    \"streetName\": \"ul. Cherni Vrah\",\r\n    \"streetNumber\": 15,\r\n    \"price\": 600000.0,\r\n    \"totalArea\": 165,\r\n    \"usableArea\": 165,\r\n    \"sharedArea\": 0,\r\n    \"floor\": 2,\r\n    \"type\": \"ONE_ROOM\",\r\n    \"floorType\": \"MID_FLOOR\",\r\n    \"status\": \"PENDING\",\r\n    \"buildYear\": 1995,\r\n    \"buildType\": \"BRICK\",\r\n    \"features\": [\r\n        \"GARAGE\",\r\n        \"BALCONY\",\r\n        \"CITY_VIEW\",\r\n        \"HYPERMARKET\",\r\n        \"SOUTHEAST\",\r\n        \"METRO\"\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/estate/20",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"estate",
+								"20"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Estates",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Page-Number",
+								"value": "0",
+								"type": "text"
+							},
+							{
+								"key": "Page-Size",
+								"value": "5",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/estate/21",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"estate",
+								"21"
+							],
+							"query": [
+								{
+									"key": "ownerId",
+									"value": "2",
+									"description": "Find by owner Id.",
+									"disabled": true
+								},
+								{
+									"key": "location",
+									"value": "SOFIA_BANISHORA,GABROVO_SIRMANI",
+									"description": "Find by locations, separated by comma.",
+									"disabled": true
+								},
+								{
+									"key": "fromPrice",
+									"value": "40000",
+									"description": "Find in a price range. This is the low point of the range.",
+									"disabled": true
+								},
+								{
+									"key": "toPrice",
+									"value": "60000",
+									"description": "Find in a price range. This is the high point of the range.",
+									"disabled": true
+								},
+								{
+									"key": "minPrice",
+									"value": "30000",
+									"description": "Find estates with price above provided.",
+									"disabled": true
+								},
+								{
+									"key": "maxPrice",
+									"value": "100000",
+									"description": "Find estates with price below provided.",
+									"disabled": true
+								},
+								{
+									"key": "fromTotalArea",
+									"value": "50",
+									"description": "Find in total area range. This is the low point of the range.",
+									"disabled": true
+								},
+								{
+									"key": "toTotalArea",
+									"value": "100",
+									"description": "Find in total area range. This is the high point of the range.",
+									"disabled": true
+								},
+								{
+									"key": "minTotalArea",
+									"value": "50",
+									"description": "Find estates with total area above provided.",
+									"disabled": true
+								},
+								{
+									"key": "maxTotalArea",
+									"value": "100",
+									"description": "Find estates with total area below provided.",
+									"disabled": true
+								},
+								{
+									"key": "fromUsableArea",
+									"value": "50",
+									"description": "Find in usable area range. This is the low point of the range.",
+									"disabled": true
+								},
+								{
+									"key": "toUsableArea",
+									"value": "100",
+									"description": "Find in usable area range. This is the low point of the range.",
+									"disabled": true
+								},
+								{
+									"key": "minUsableArea",
+									"value": "50",
+									"description": "Find estates with usable area above provided.",
+									"disabled": true
+								},
+								{
+									"key": "maxUsableArea",
+									"value": "100",
+									"description": "Find estates with usable area below provided.",
+									"disabled": true
+								},
+								{
+									"key": "fromFloor",
+									"value": "3",
+									"description": "Find estates in floor range. This is the low point of the range.",
+									"disabled": true
+								},
+								{
+									"key": "toFloor",
+									"value": "6",
+									"description": "Find estates in floor range. This is the high point of the range.",
+									"disabled": true
+								},
+								{
+									"key": "minFloor",
+									"value": "5",
+									"description": "Find estates with floor above provided.",
+									"disabled": true
+								},
+								{
+									"key": "maxFloor",
+									"value": "5",
+									"description": "Find estates with floor below provided.",
+									"disabled": true
+								},
+								{
+									"key": "floorType",
+									"value": "MID_FLOOR",
+									"description": "FIRST_FLOOR,MID_FLOOR,LAST_FLOOR",
+									"disabled": true
+								},
+								{
+									"key": "status",
+									"value": "PENDING",
+									"description": "PENDING,ACTIVE,SUSPENDED,SOLD",
+									"disabled": true
+								},
+								{
+									"key": "fromBuildYear",
+									"value": "1990",
+									"description": "Find estates in build year range. This is the low point of the range.",
+									"disabled": true
+								},
+								{
+									"key": "toBuildYear",
+									"value": "2010",
+									"description": "Find estates in build year range. This is the high point of the range.",
+									"disabled": true
+								},
+								{
+									"key": "minBuildYear",
+									"value": "1975",
+									"description": "Find estates with build year above provided.",
+									"disabled": true
+								},
+								{
+									"key": "maxBuildYear",
+									"value": "2005",
+									"description": "Find estates with build year above provided.",
+									"disabled": true
+								},
+								{
+									"key": "buildType",
+									"value": "PANEL",
+									"description": "PANEL,LARGE_AREA_FORMWORK,CLIMBING_FORMWORK,JOIST,BRICK,ASSEMBLED",
+									"disabled": true
+								},
+								{
+									"key": "type",
+									"value": "TWO_ROOM,THREE_ROOM",
+									"description": "ONE_ROOM,TWO_ROOM,THREE_ROOM,FOUR_ROOM,MULTI_ROOM,PENTHOUSE,WORKSHOP_ATTIC,OFFICE,COMMERCIAL, HOUSE,HOUSE_FLOOR,COTTAGE",
+									"disabled": true
+								},
+								{
+									"key": "dateCreated",
+									"value": "2022-10-06",
+									"description": "Find estates published on specific date. [yyyy-MM-dd]",
+									"disabled": true
+								},
+								{
+									"key": "fromDateCreated",
+									"value": "2022-10-06",
+									"description": "Find estates published on in a date range. Low value. [yyyy-MM-dd]",
+									"disabled": true
+								},
+								{
+									"key": "toDateCreated",
+									"value": "2022-10-06",
+									"description": "Find estates published on in a date range. High value. [yyyy-MM-dd]",
+									"disabled": true
+								},
+								{
+									"key": "minDateCreated",
+									"value": "2022-10-06",
+									"description": "Find estates published after the date provided. [yyyy-MM-dd]",
+									"disabled": true
+								},
+								{
+									"key": "maxDateCreated",
+									"value": "2022-10-08",
+									"description": "Find estates published before the date provided. [yyyy-MM-dd]",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create an Estate",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\": \"This is a house estate in sofia lozenets.\",\r\n    \"location\": \"SOFIA_LOZENETS\",\r\n    \"streetName\": \"ul. Cherni Vrah\",\r\n    \"streetNumber\": 15,\r\n    \"price\": 500000.0,\r\n    \"totalArea\": 165,\r\n    \"usableArea\": 165,\r\n    \"sharedArea\": 0,\r\n    \"floor\": 2,\r\n    \"type\": \"ONE_ROOM\",\r\n    \"floorType\": \"MID_FLOOR\",\r\n    \"status\": \"PENDING\",\r\n    \"buildYear\": 1995,\r\n    \"buildType\": \"BRICK\",\r\n    \"features\": [\r\n        \"GARAGE\",\r\n        \"BALCONY\",\r\n        \"CITY_VIEW\",\r\n        \"HYPERMARKET\",\r\n        \"SOUTHEAST\",\r\n        \"METRO\"\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/estate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"estate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete an Estate",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/estate/21",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"estate",
+								"21"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ImageData",
+			"item": [
+				{
+					"name": "Upload an Entityless Image",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"description": "asd",
+									"type": "file",
+									"src": "/C:/Users/Svetozar Blazhev/Desktop/Image_created_with_a_mobile_phone.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/image",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"image"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Upload an Image",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"description": "asd",
+									"type": "file",
+									"src": "/C:/Users/Svetozar Blazhev/Desktop/Image_created_with_a_mobile_phone.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/image",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"image"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get an Image by Name",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Delete an Image",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/image",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"image"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Upload an Image Copy",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"description": "asd",
+									"type": "file",
+									"src": "/C:/Users/Svetozar Blazhev/Desktop/Image_created_with_a_mobile_phone.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/image",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"image"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "TEST",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
